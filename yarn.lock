@@ -87,7 +87,7 @@ __metadata:
     "@terra-money/feather.js": ^1.0.4
     "@types/d3-array": ^3.0.3
     "@types/node": ^16.11.56
-    axios: ^0.27.2
+    axios: ^1.5.1
     big.js: ^6.2.1
     d3-array: ^3.2.0
     date-fns: ^2.29.2
@@ -2565,7 +2565,7 @@ __metadata:
     "@terra-money/feather.js": ^1.0.4
     "@types/d3-array": ^3.0.3
     "@types/node": ^16.11.56
-    axios: ^0.27.2
+    axios: ^1.5.1
     big.js: ^6.2.1
     d3-array: ^3.2.0
     date-fns: ^2.29.2
@@ -2589,7 +2589,7 @@ __metadata:
     "@types/memoizee": ^0.4.8
     "@types/node": ^16.11.56
     aws-lambda: ^1.0.7
-    axios: ^1.4.0
+    axios: ^1.5.1
     big.js: ^6.2.1
     date-fns: ^2.29.2
     dotenv: ^16.0.1
@@ -6554,7 +6554,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.4.0":
+"axios@npm:^1.4.0, axios@npm:^1.5.1":
   version: 1.5.1
   resolution: "axios@npm:1.5.1"
   dependencies:
