@@ -24,7 +24,7 @@ export const RecentProposals = () => {
         error={() => <Text>Failed to load</Text>}
         success={(proposals) => (
           <div className={classNames(styles.btn)}>
-          <SameWidthChildrenRow maxColumns={3} fullWidth minChildrenWidth={320} gap={16}>
+          <SameWidthChildrenRow maxColumns={1} fullWidth minChildrenWidth={320} gap={16}>
             {proposals
               .sort((a, b) => b.id - a.id)
               .slice(0, 6)
