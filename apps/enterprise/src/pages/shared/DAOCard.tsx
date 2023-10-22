@@ -87,7 +87,8 @@ export const DAOCard = (props: DAOCardProps) => {
      //   actionPlacerStyles={{
       //    right: 20,
       //  }}
-     //   action={<FavouriteToggle dao={dao} />}
+     //   action={<FavouriteToggle dao={dao} />
+        }
       />
   );
 };
