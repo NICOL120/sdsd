@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+import styles from './TokenDaoTotalSupply.module.css';
 import { SameWidthChildrenRow } from 'lib/ui/Layout/SameWidthChildrenRow';
 import { ProposalCard } from '../shared/ProposalCard';
 import { useCurrentDaoAddress } from 'dao/navigation';
@@ -15,6 +17,7 @@ export const RecentProposals = () => {
 
   return (
     <LabeledPageSection name="Recent proposals">
+      <div className={classNames(styles.btn)}>
       <QueryDependant
         data={data}
         status={status}
@@ -33,6 +36,7 @@ export const RecentProposals = () => {
           </SameWidthChildrenRow>
         )}
       />
+        </div>
     </LabeledPageSection>
   );
 };
