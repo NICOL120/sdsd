@@ -48,8 +48,7 @@ export const DAOCard = (props: DAOCardProps) => {
   const { tvl } = dao;
 
   return(
-    <div className={classNames(styles.card)}>
-      <h2>
+    <div className={classNames(styles.btn)}>
       <ActionInsideInteractiveElement
         render={({ actionSize }) => (
           <InternalLink style={{ width: '100%' }} to={getDaoPath(dao.address)}>
@@ -88,7 +87,6 @@ export const DAOCard = (props: DAOCardProps) => {
         }}
         action={<FavouriteToggle dao={dao} />}
       />
-      </h2>
   </div>
   );
 };
