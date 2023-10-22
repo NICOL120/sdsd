@@ -48,7 +48,7 @@ export const DAOCard = (props: DAOCardProps) => {
   const { tvl } = dao;
 
   return (
-    <div className={classNames(styles.card)}>
+    <div class="card">
     <>
       <ActionInsideInteractiveElement
         render={({ actionSize }) => (
