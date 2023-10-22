@@ -20,7 +20,7 @@ return (
         ))}
       </SameWidthChildrenRow>
     </LabeledPageSection>
+      </h2>
       </div>
-  </h2>
   );
 };
