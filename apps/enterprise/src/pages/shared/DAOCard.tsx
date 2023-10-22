@@ -48,46 +48,43 @@ export const DAOCard = (props: DAOCardProps) => {
   const { tvl } = dao;
 
   return(
-    
-      <ActionInsideInteractiveElement
-        render={({ actionSize }) => (
-          <InternalLink style={{ width: '100%' }} to={getDaoPath(dao.address)}>
-            <div className={classNames(styles.btn)}>
-            <Container>
-              <HStack gap={20} alignItems="center" justifyContent="space-between">
-                <Content alignItems="center" gap={20}>
-                  <DAOLogo logo={dao.logo} />
-                  <VStack>
-                    <Text cropped weight="semibold" size={14}>
-                      {dao.name}
-                    </Text>
-                    <SeparatedBy separator={dotSeparator}>
-                      <Text size={14} weight="semibold" color="supporting">
-                        {daoTypeName[dao.type]}
-                      </Text>
-                      {tvl && tvl > 0 && (
-                        <Tooltip
-                          content="Total value locked"
-                          renderOpener={(props) => (
-                            <Text {...props} size={14} weight="semibold" color="supporting">
-                              ${formatAmount(tvl)}
-                            </Text>
-                          )}
-                        />
+<ActionInsideInteractiveElement
+  render={({ actionSize }) => (
+    <InternalLink style={{ width: '100%' }} to={getDaoPath(dao.address)}>
+      <div className={classNames(styles.btn)}>
+        <Container>
+          <HStack gap={20} alignItems="center" justifyContent="space-between">
+            <Content alignItems="center" gap={20}>
+              <DAOLogo logo={dao.logo} />
+              <VStack>
+                <Text cropped weight="semibold" size={14}>
+                  {dao.name}
+                </Text>
+                <SeparatedBy separator={dotSeparator}>
+                  <Text size={14} weight="semibold" color="supporting">
+                    {daoTypeName[dao.type]}
+                  </Text>
+                  {tvl && tvl > 0 && (
+                    <Tooltip
+                      content="Total value locked"
+                      renderOpener={(props) => (
+                        <Text {...props} size={14} weight="semibold" color="supporting">
+                          ${formatAmount(tvl)}
+                        </Text>
                       )}
-                    </SeparatedBy>
-                  </VStack>
-                </Content>
-                <Spacer {...actionSize} />
-              </HStack>
-            </Container>
-              </div>
-          </InternalLink>
-        )}
-      actionPlacerStyles={{
-         right: 20,
-        }}
-      action={</>
-        }
-  );
-};
+                    />
+                  )}
+                </SeparatedBy>
+              </VStack>
+            </Content>
+            <Spacer {...actionSize} />
+          </HStack>
+        </Container>
+      </div>
+    </InternalLink>
+  )}
+  actionPlacerStyles={{
+    right: 20,
+  }}
+  action={null} // Menghapus nilai yang tidak diperlukan
+);
