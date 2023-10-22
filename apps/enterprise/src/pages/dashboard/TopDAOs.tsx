@@ -12,6 +12,7 @@ export const RecentDAOs = () => {
 
 return (
     <div className={classNames(styles.card)}>
+      <h2>
       <LabeledPageSection name="">
       <SameWidthChildrenRow maxColumns={3} fullWidth minChildrenWidth={320} gap={16}>
         {daos.map((dao, index) => (
@@ -20,5 +21,6 @@ return (
       </SameWidthChildrenRow>
     </LabeledPageSection>
       </div>
+  </h2>
   );
 };
