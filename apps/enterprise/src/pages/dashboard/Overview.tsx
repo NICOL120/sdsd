@@ -24,11 +24,9 @@ export const Overview = () => {
   return (
     <div className={classNames(styles.btn)}>
     <SameWidthChildrenRow minChildrenWidth={320} rowHeight={110} gap={16} fullWidth>
-      <Panel>
         <TitledSection title="Nico Dao Community Pool">
           <NumericStatistic value={formatAmount(totalCommunityPools)} suffix="USD" />
         </TitledSection>
-      </Panel>
     </SameWidthChildrenRow>
     </div>
   );
