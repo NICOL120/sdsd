@@ -48,10 +48,11 @@ export const DAOCard = (props: DAOCardProps) => {
   const { tvl } = dao;
 
   return(
-    <div className={classNames(styles.btn)}>
+    
       <ActionInsideInteractiveElement
         render={({ actionSize }) => (
           <InternalLink style={{ width: '100%' }} to={getDaoPath(dao.address)}>
+            <div className={classNames(styles.btn)}>
             <Container>
               <HStack gap={20} alignItems="center" justifyContent="space-between">
                 <Content alignItems="center" gap={20}>
@@ -80,13 +81,13 @@ export const DAOCard = (props: DAOCardProps) => {
                 <Spacer {...actionSize} />
               </HStack>
             </Container>
+              </div>
           </InternalLink>
         )}
-        actionPlacerStyles={{
-          right: 20,
-        }}
-        action={<FavouriteToggle dao={dao} />}
+     //   actionPlacerStyles={{
+      //    right: 20,
+      //  }}
+     //   action={<FavouriteToggle dao={dao} />}
       />
-  </div>
   );
 };
