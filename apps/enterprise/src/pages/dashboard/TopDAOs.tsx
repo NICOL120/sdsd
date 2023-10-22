@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { useAllDaosQuery } from 'dao/hooks/useAllDaosQuery';
 import { LabeledPageSection } from 'lib/ui/LabeledPageSection';
 import { SameWidthChildrenRow } from 'lib/ui/Layout/SameWidthChildrenRow';
