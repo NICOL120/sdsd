@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { useAllDaosQuery } from 'dao/hooks/useAllDaosQuery';
 import { QueryDependant } from 'lib/query/components/QueryDependant';
 import { formatAmount } from 'lib/shared/utils/formatAmount';
@@ -6,10 +7,10 @@ import { sum } from 'lib/shared/utils/sum';
 import { SameWidthChildrenRow } from 'lib/ui/Layout/SameWidthChildrenRow';
 import { TitledSection } from 'lib/ui/Layout/TitledSection';
 import { NumericStatistic } from 'lib/ui/NumericStatistic';
-import { Panel } from 'lib/ui/Panel/Panel';
 import { Spinner } from 'lib/ui/Spinner';
 import { Text } from 'lib/ui/Text';
 import { useProposalsQuery } from 'queries';
+import styles from './Overview.module.css';
 
 export const Overview = () => {
   // TODO: get this a better way
@@ -21,6 +22,7 @@ export const Overview = () => {
   const totalCommunityPools = sum(removeUndefinedItems((daos || []).map((dao) => dao.tvl)));
 
   return (
+    <div className={classNames(styles.btn)}>
     <SameWidthChildrenRow minChildrenWidth={320} rowHeight={110} gap={16} fullWidth>
       <Panel>
         <TitledSection title="Nico Dao Community Pool">
@@ -28,5 +30,6 @@ export const Overview = () => {
         </TitledSection>
       </Panel>
     </SameWidthChildrenRow>
+    </div>
   );
 };
