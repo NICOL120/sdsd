@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+import styles from './TokenDaoTotalSupply.module.css';
 import { Address } from 'chain/components/Address';
 import { useCurrentDao } from 'dao/components/CurrentDaoProvider';
 import { SameWidthChildrenRow } from 'lib/ui/Layout/SameWidthChildrenRow';
@@ -17,6 +19,7 @@ export const AddressesOverview = () => {
 
   return (
     <TitledSection title="Addresses">
+      <div className={classNames(styles.btn)}>
       <SameWidthChildrenRow minChildrenWidth={320} gap={16}>
         <Panel>
           <TitledContent title="DAO address">
@@ -34,6 +37,7 @@ export const AddressesOverview = () => {
           </TitledContent>
         </Panel>
       </SameWidthChildrenRow>
+        </div>
     </TitledSection>
   );
 };
