@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+import styles from './TokenDaoTotalSupply.module.css';
 import { useCW20TokenInfoQuery } from 'queries/useCW20TokenInfoQuery';
 import { fromChainAmount } from 'chain/utils/fromChainAmount';
 import { useCurrentDao } from 'dao/components/CurrentDaoProvider';
@@ -15,6 +17,7 @@ export const TokenDaoTotalSupplyPanel = () => {
   const { data, status } = useCW20TokenInfoQuery(dao_membership_contract);
 
   return (
+    <div className={classNames(styles.btn)}>
     <Panel>
       <TitledSection title="Total supply">
         <QueryDependant
@@ -28,5 +31,6 @@ export const TokenDaoTotalSupplyPanel = () => {
         />
       </TitledSection>
     </Panel>
+      </div>
   );
 };
