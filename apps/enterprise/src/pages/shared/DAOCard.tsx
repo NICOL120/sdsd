@@ -89,6 +89,5 @@ export const DAOCard = (props: DAOCardProps) => {
         }}
       action={</>
         }
-      />
   );
 };
