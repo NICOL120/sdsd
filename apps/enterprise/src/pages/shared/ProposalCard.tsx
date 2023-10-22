@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import styles from './TopDAOs.module.css';
+import styles from './DAOCard.module.css';
 import { Stack, VStack } from 'lib/ui/Stack';
 import { DAOLogo } from 'components/dao-logo';
 
