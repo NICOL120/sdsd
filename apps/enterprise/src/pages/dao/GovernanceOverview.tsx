@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+import styles from './TokenDaoTotalSupply.module.css';
 import { useCurrentDao } from 'dao/components/CurrentDaoProvider';
 import { toDao } from 'dao/utils/toDao';
 import { TitledContent } from 'lib/ui/Layout/TitledContent';
@@ -24,6 +26,7 @@ export const GovernanceOverview = () => {
   const configView = fromDao(toDao(dao));
 
   return (
+    <div className={classNames(styles.btn)}>
     <Panel>
       <TitledContent title="Governance">
         <Container>
@@ -38,5 +41,6 @@ export const GovernanceOverview = () => {
         </Container>
       </TitledContent>
     </Panel>
+      </div>
   );
 };
