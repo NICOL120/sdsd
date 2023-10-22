@@ -24,16 +24,16 @@ export const RecentProposals = () => {
         error={() => <Text>Failed to load</Text>}
         success={(proposals) => (
           <SameWidthChildrenRow maxColumns={1} fullWidth minChildrenWidth={320} gap={16}>
-            <div className={classNames(styles.btn)}>
             {proposals
               .sort((a, b) => b.id - a.id)
               .slice(0, 6)
               .map((proposal, index) => (
+                <div className={classNames(styles.btn)}>
                 <CurrentProposalProvider key={proposal.id} value={proposal}>
                   <ProposalCard />
                 </CurrentProposalProvider>
+                  </div>
               ))}
-              </div>
           </SameWidthChildrenRow>
         )}
       />
