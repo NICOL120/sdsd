@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+import styles from './TokenDaoTotalSupply.module.css';
 import { ReactComponent as TwitterIcon } from 'components/assets/TwitterLogo.svg';
 import { ReactComponent as DiscordIcon } from 'components/assets/DiscordLogo.svg';
 import { SocialItem } from './SocialItem';
@@ -30,6 +32,7 @@ export const SocialChannels = () => {
   return (
     <VStack gap={16}>
       <Text weight="bold">Social channels</Text>
+      <div className={classNames(styles.btn)}>
       <Panel>
         <Container>
           {github_username && (
@@ -46,6 +49,7 @@ export const SocialChannels = () => {
           )}
         </Container>
       </Panel>
+        </div>
     </VStack>
   );
 };
