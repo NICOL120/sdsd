@@ -82,5 +82,4 @@ export const DAOCard = (props: DAOCardProps) => {
         </Container>
       </div>
     </InternalLink>
-  )}
-);
+  );
