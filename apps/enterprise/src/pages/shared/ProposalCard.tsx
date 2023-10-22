@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+import styles from './TopDAOs.module.css';
 import { Stack, VStack } from 'lib/ui/Stack';
 import { DAOLogo } from 'components/dao-logo';
 
@@ -154,6 +156,8 @@ export const ProposalCard = ({ showDao }: ProposalCardProps) => {
   );
 
   return (
+    <div className={classNames(styles.card)}>
+      <h2>
     <Wrapper>
       <InternalLink to={`/dao/${dao.address}/proposals/${proposal.id}`}>
         <Content kind="secondary">
@@ -191,5 +195,7 @@ export const ProposalCard = ({ showDao }: ProposalCardProps) => {
         </DaoLinkOverlay>
       )}
     </Wrapper>
+    </h2>
+      </div>
   );
 };
