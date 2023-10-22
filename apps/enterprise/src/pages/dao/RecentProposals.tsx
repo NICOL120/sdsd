@@ -28,11 +28,9 @@ export const RecentProposals = () => {
               .sort((a, b) => b.id - a.id)
               .slice(0, 6)
               .map((proposal, index) => (
-                <div className={classNames(styles.btn)}>
                 <CurrentProposalProvider key={proposal.id} value={proposal}>
                   <ProposalCard />
                 </CurrentProposalProvider>
-                  </div>
               ))}
           </SameWidthChildrenRow>
         )}
