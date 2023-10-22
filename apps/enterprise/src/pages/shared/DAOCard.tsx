@@ -84,10 +84,10 @@ export const DAOCard = (props: DAOCardProps) => {
               </div>
           </InternalLink>
         )}
-     //   actionPlacerStyles={{
-      //    right: 20,
-      //  }}
-     //   action={<FavouriteToggle dao={dao} />
+      actionPlacerStyles={{
+         right: 20,
+        }}
+      action={</>
         }
       />
   );
