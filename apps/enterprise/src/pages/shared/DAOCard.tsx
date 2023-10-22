@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+import styles from './DAOCard.module.css';
 import { HStack, VStack } from 'lib/ui/Stack';
 import { Text } from 'lib/ui/Text';
 import { DAO } from 'types';
@@ -46,6 +48,7 @@ export const DAOCard = (props: DAOCardProps) => {
   const { tvl } = dao;
 
   return (
+    <div className={classNames(styles.btn)}>
     <>
       <ActionInsideInteractiveElement
         render={({ actionSize }) => (
@@ -86,5 +89,6 @@ export const DAOCard = (props: DAOCardProps) => {
         action={<FavouriteToggle dao={dao} />}
       />
     </>
+    </div>
   );
 };
