@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+import styles from './TokenDaoTotalSupply.module.css';
 import { useCW20TokenInfoQuery, useTokenStakingAmountQuery } from 'queries';
 import { fromChainAmount } from 'chain/utils/fromChainAmount';
 import Big from 'big.js';
@@ -19,6 +21,7 @@ export const TokenDaoTotalStakedPanel = () => {
   const { data: totalStaked, status } = useTokenStakingAmountQuery(address);
 
   return (
+    <div className={classNames(styles.btn)}>
       <Panel>
   <TitledSection title="Total staked">
     <QueryDependant
@@ -49,5 +52,6 @@ export const TokenDaoTotalStakedPanel = () => {
     />
   </TitledSection>
 </Panel>
+      </div>
   );
 };
