@@ -11,6 +11,7 @@ export const RecentDAOs = () => {
   const daos = data.sort((a, b) => (b.tvl ?? 0) - (a.tvl ?? 0)).slice(0, 6);
 
   return (
+    <div className="card">
     <LabeledPageSection name="">
       <SameWidthChildrenRow maxColumns={3} fullWidth minChildrenWidth={320} gap={16}>
         {daos.map((dao, index) => (
@@ -18,5 +19,6 @@ export const RecentDAOs = () => {
         ))}
       </SameWidthChildrenRow>
     </LabeledPageSection>
+    </div>
   );
 };
