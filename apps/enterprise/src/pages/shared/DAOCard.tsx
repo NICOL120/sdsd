@@ -57,7 +57,7 @@ export const DAOCard = (props: DAOCardProps) => {
                 <Content alignItems="center" gap={20}>
                   <DAOLogo logo={dao.logo} />
                   <VStack>
-                    <Text crop weight="semibold" size={14}>
+                    <Text cropped weight="semibold" size={14}>
                       {dao.name}
                     </Text>
                     <SeparatedBy separator={dotSeparator}>
