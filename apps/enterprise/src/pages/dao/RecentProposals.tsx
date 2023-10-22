@@ -17,7 +17,6 @@ export const RecentProposals = () => {
 
   return (
     <LabeledPageSection name="Recent proposals">
-      <div className={classNames(styles.btn)}>
       <QueryDependant
         data={data}
         status={status}
@@ -38,7 +37,6 @@ export const RecentProposals = () => {
             </div>
         )}
       />
-        </div>
     </LabeledPageSection>
   );
 };
