@@ -24,6 +24,7 @@ export const RecentProposals = () => {
         loading={() => <Spinner />}
         error={() => <Text>Failed to load</Text>}
         success={(proposals) => (
+          <div className={classNames(styles.btn)}>
           <SameWidthChildrenRow maxColumns={3} fullWidth minChildrenWidth={320} gap={16}>
             {proposals
               .sort((a, b) => b.id - a.id)
@@ -34,6 +35,7 @@ export const RecentProposals = () => {
                 </CurrentProposalProvider>
               ))}
           </SameWidthChildrenRow>
+            </div>
         )}
       />
         </div>
