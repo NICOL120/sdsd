@@ -1,6 +1,6 @@
 .card {
-  width: 1000px;
-  height: 254px;
+  width: relative;
+  height: 150px;
   background: #07182E;
   position: relative;
   display: flex;
@@ -19,9 +19,9 @@
 .card::before {
   content: '';
   position: absolute;
-  width: 100px;
+  width: 375px;
   background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-  height: 130%;
+  height:750px;
   animation: rotBGimg 3s linear infinite;
   transition: all 0.2s linear;
 }
