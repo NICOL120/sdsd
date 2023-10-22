@@ -83,8 +83,4 @@ export const DAOCard = (props: DAOCardProps) => {
       </div>
     </InternalLink>
   )}
-  actionPlacerStyles={{
-    right: 20,
-  }}
-  action={null} // Menghapus nilai yang tidak diperlukan
 );
