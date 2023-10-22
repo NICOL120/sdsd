@@ -47,8 +47,8 @@ export const DAOCard = (props: DAOCardProps) => {
 
   const { tvl } = dao;
 
-  return (
-    <div className="card">
+  return(
+    <div className={classNames(styles.btn)}>
       <ActionInsideInteractiveElement
         render={({ actionSize }) => (
           <InternalLink style={{ width: '100%' }} to={getDaoPath(dao.address)}>
