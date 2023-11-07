@@ -2506,7 +2506,7 @@ __metadata:
     "@types/react": ^18.0.17
     "@types/react-dom": ^18.0.6
     "@types/react-router-dom": ^5.3.3
-    "@types/react-virtualized": ^9.21.21
+    "@types/react-virtualized": ^9.21.27
     "@types/react-window": ^1.8.5
     "@types/styled-components": ^5.1.25
     ace-builds: ^1.23.4
@@ -5249,13 +5249,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-virtualized@npm:^9.21.21":
-  version: 9.21.23
-  resolution: "@types/react-virtualized@npm:9.21.23"
+"@types/react-virtualized@npm:^9.21.27":
+  version: 9.21.27
+  resolution: "@types/react-virtualized@npm:9.21.27"
   dependencies:
     "@types/prop-types": "*"
     "@types/react": "*"
-  checksum: 825ca8e30df26dcf37c0aec5712c677a277be099e743aade62a53de15a1f3d8e4cc7baa2dc07dd1608b6ea3783b3a528033096c15ebc39dfefd3e0d6cff49317
+  checksum: cb6d40580f4bbcc78960699e213942975e9366204b90d24c86be2034d2cbc86db497b3fa3abfe4c5539624fd5fb779a427b89d1821059e6aa2a4e0584f7edc50
   languageName: node
   linkType: hard
 
