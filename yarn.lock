@@ -2495,7 +2495,7 @@ __metadata:
     "@terra-money/feather.js": ^1.0.4
     "@terra-money/log-finder-ruleset": ^3.0.2
     "@terra-money/terra-station-mobile": 1.0.8
-    "@terra-money/wallet-kit": 1.0.11
+    "@terra-money/wallet-kit": 1.0.16
     "@terra.kitchen/utils": ^1.0.7
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
@@ -4556,28 +4556,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@terra-money/station-connector@npm:^1.0.15":
-  version: 1.0.15
-  resolution: "@terra-money/station-connector@npm:1.0.15"
+"@terra-money/station-connector@npm:^1.0.16":
+  version: 1.0.16
+  resolution: "@terra-money/station-connector@npm:1.0.16"
   dependencies:
     bech32: ^2.0.0
   peerDependencies:
     "@cosmjs/amino": ^0.31.0
     "@terra-money/feather.js": ^1.0.8
     axios: ^0.27.2
-  checksum: ca2bb376da7f8803ac6b05b7719f26b6298a7a1cbe581e17086c964e3d2742d549af131608f0d702a00481d94ad307606b475440b4aec936af66747a911538ef
+  checksum: 7680317e1b53a4df147d8af962304b3729b55021f740665f0752e3e6c9dd7d4fed1242255f0ee348ed34a63488617fed74fa14c46e5c4d5518be30e83a5f4719
   languageName: node
   linkType: hard
 
-"@terra-money/station-wallet@npm:^1.0.11":
-  version: 1.0.15
-  resolution: "@terra-money/station-wallet@npm:1.0.15"
+"@terra-money/station-wallet@npm:^1.0.16":
+  version: 1.0.16
+  resolution: "@terra-money/station-wallet@npm:1.0.16"
   dependencies:
-    "@terra-money/station-connector": ^1.0.15
-    "@terra-money/wallet-interface": ^1.0.15
+    "@terra-money/station-connector": ^1.0.16
+    "@terra-money/wallet-interface": ^1.0.16
   peerDependencies:
     "@terra-money/feather.js": ^1.0.8
-  checksum: aaa6bbe87436e85c207338c2e183815b56d6d64a3d471cd2c90cf7cca310ba60aa347768b497452d7f3b4db4f6ba9d16fa89af29648bb4f0854e79f7d58dc57b
+  checksum: ddb5b7a4924f3807d2c37146c8a4fa3783deda98f8d5a39b0548aebb79b880dcf1f9352407b4567f6db568dcad3b86ca19eb20105b8147312b25f6b55c63efed
   languageName: node
   linkType: hard
 
@@ -4648,7 +4648,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@terra-money/wallet-interface@npm:^1.0.11, @terra-money/wallet-interface@npm:^1.0.15, @terra-money/wallet-interface@npm:^1.0.8":
+"@terra-money/wallet-interface@npm:^1.0.16":
+  version: 1.0.16
+  resolution: "@terra-money/wallet-interface@npm:1.0.16"
+  peerDependencies:
+    "@terra-money/feather.js": ^1.0.8
+  checksum: 827f3be71ebd50326a307ac2d9c8429a27ca71300414a31c0365771cc3da47a0256d220ee75cc0fa9af2f92b73bd54d3b3685ff9d02cba2926adf6986e2c8d9c
+  languageName: node
+  linkType: hard
+
+"@terra-money/wallet-interface@npm:^1.0.8":
   version: 1.0.15
   resolution: "@terra-money/wallet-interface@npm:1.0.15"
   peerDependencies:
@@ -4657,17 +4666,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@terra-money/wallet-kit@npm:1.0.11":
-  version: 1.0.11
-  resolution: "@terra-money/wallet-kit@npm:1.0.11"
+"@terra-money/wallet-kit@npm:1.0.16":
+  version: 1.0.16
+  resolution: "@terra-money/wallet-kit@npm:1.0.16"
   dependencies:
-    "@terra-money/station-wallet": ^1.0.11
-    "@terra-money/wallet-interface": ^1.0.11
-    axios: ^1.4.0
+    "@terra-money/station-wallet": ^1.0.16
+    "@terra-money/wallet-interface": ^1.0.16
   peerDependencies:
-    "@terra-money/feather.js": ^1.0.4
-    react: ">=17.0.0"
-  checksum: d145d0f7abc6d9fcf74f8e9235cb4d9593b96e47389d6c60c8c0fbbbb6cf559fb7471510281a0bccd02a9a57a24390d47b805428d4d213269fb02a74ff9aa6c3
+    "@terra-money/feather.js": ^1.0.8
+    axios: ^0.27.2
+    react: ^18.2.0
+  checksum: 86df13105119f7dc2a6b5c060bc3f74db415dd57a68d0e69b78be3a6746cfdc163ba93b34f0d67e4824eb480e2abf3284259d76d5d6bdde44b58b48dfaf41c1f
   languageName: node
   linkType: hard
 
